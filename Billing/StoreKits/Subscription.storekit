@@ -1,0 +1,45 @@
+{
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "C8E75F0A",
+      "localizations" : [
+
+      ],
+      "name" : "All Fruits",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "1000",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "226E01D1",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "",
+              "displayName" : "",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "all.fruits",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "All Fruits",
+          "subscriptionGroupID" : "C8E75F0A",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 0
+  }
+}
