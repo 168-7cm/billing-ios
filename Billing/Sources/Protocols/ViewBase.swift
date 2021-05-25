@@ -9,5 +9,5 @@ import Foundation
 
 // Viewプロトコルを作成する際に必ず継承する
 protocol ViewBase: AnyObject {
-    
+    func showToast(message: String)
 }
