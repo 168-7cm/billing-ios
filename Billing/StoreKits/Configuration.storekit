@@ -1,4 +1,8 @@
 {
+  "identifier" : "FB6AE3DA",
+  "nonRenewingSubscriptions" : [
+
+  ],
   "products" : [
     {
       "displayPrice" : "0.99",
@@ -54,6 +58,6 @@
   ],
   "version" : {
     "major" : 1,
-    "minor" : 0
+    "minor" : 1
   }
 }

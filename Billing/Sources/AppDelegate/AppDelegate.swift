@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import StoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
