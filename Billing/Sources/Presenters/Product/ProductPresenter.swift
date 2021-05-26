@@ -45,7 +45,7 @@ extension ProductPresenter: ProductPresenterType {
 
 
     func didSelectedRow(at indexPath: IndexPath) {
-        self.view?.showToast(message: "didselected\(indexPath)")
+        StoreKitManager.shared.purchase(product: products[indexPath.row].product)
     }
     
     func fetchProduct() {

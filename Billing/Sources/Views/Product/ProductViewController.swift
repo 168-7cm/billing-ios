@@ -61,4 +61,9 @@ extension ProductViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configure(product: product)
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        self.presenter?.didSelectedRow(at: indexPath)
+    }
 }

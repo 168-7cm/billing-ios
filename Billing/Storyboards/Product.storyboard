@@ -43,7 +43,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trc-aX-CdC">
-                                                            <rect key="frame" x="15" y="41.5" width="37.5" height="18"/>
+                                                            <rect key="frame" x="15" y="41" width="37.5" height="18"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -53,11 +53,11 @@
                                                     <constraints>
                                                         <constraint firstItem="pwX-gP-sl7" firstAttribute="leading" secondItem="niH-pW-oKy" secondAttribute="leading" constant="15" id="0ru-W6-y6X"/>
                                                         <constraint firstItem="pwX-gP-sl7" firstAttribute="top" secondItem="niH-pW-oKy" secondAttribute="top" constant="15" id="26E-y3-pFs"/>
-                                                        <constraint firstItem="Trc-aX-CdC" firstAttribute="top" secondItem="pwX-gP-sl7" secondAttribute="bottom" priority="250" constant="5" id="2Yi-ya-Mkt"/>
+                                                        <constraint firstItem="Trc-aX-CdC" firstAttribute="top" secondItem="pwX-gP-sl7" secondAttribute="bottom" constant="5" id="2Yi-ya-Mkt"/>
                                                         <constraint firstAttribute="trailing" secondItem="kLi-sg-1Dt" secondAttribute="trailing" constant="15" id="9sC-LR-E42"/>
                                                         <constraint firstItem="Trc-aX-CdC" firstAttribute="leading" secondItem="pwX-gP-sl7" secondAttribute="leading" id="CCl-1r-Jfm"/>
                                                         <constraint firstItem="kLi-sg-1Dt" firstAttribute="centerY" secondItem="niH-pW-oKy" secondAttribute="centerY" id="RDt-3v-aFY"/>
-                                                        <constraint firstAttribute="bottom" secondItem="Trc-aX-CdC" secondAttribute="bottom" constant="15" id="gSb-be-dnb"/>
+                                                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Trc-aX-CdC" secondAttribute="bottom" constant="15" id="gSb-be-dnb"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
