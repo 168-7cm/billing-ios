@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,22 @@
 		BB2D1D7A26418A8C00E7C980 /* BillingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D1D7926418A8C00E7C980 /* BillingTests.swift */; };
 		BB2D1D8526418A8D00E7C980 /* BillingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D1D8426418A8D00E7C980 /* BillingUITests.swift */; };
 		BB2D1F932644122500E7C980 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB2D1F922644122500E7C980 /* Product.storyboard */; };
-		BB2D1F982644123700E7C980 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D1F972644123700E7C980 /* ProductViewController.swift */; };
+		BB2D1F982644123700E7C980 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D1F972644123700E7C980 /* ProductsViewController.swift */; };
 		BB2D1FA32644134600E7C980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2D1FA22644134600E7C980 /* AppDelegate.swift */; };
+		BB47AFE1265D3D4300F8592E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB47AFE0265D3D4300F8592E /* Product.swift */; };
+		BB47AFE3265D3EC400F8592E /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB47AFE2265D3EC400F8592E /* ProductModel.swift */; };
+		BB47AFE6265D40A900F8592E /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = BB47AFE5265D40A900F8592E /* Toast */; };
+		BB47AFEA265D43A100F8592E /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = BB47AFE9265D43A100F8592E /* Rswift */; };
+		BB47AFEC265D461900F8592E /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB47AFEB265D461900F8592E /* R.generated.swift */; };
+		BB47AFEF265D49A200F8592E /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB47AFEE265D49A200F8592E /* ProductCell.swift */; };
+		BBB106E32646D40E003E9D08 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB106E22646D40E003E9D08 /* ProductViewController.swift */; };
+		BBB106E82646D434003E9D08 /* ViewControllerInstansiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB106E72646D434003E9D08 /* ViewControllerInstansiable.swift */; };
+		BBB106ED2646D448003E9D08 /* PresenterInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB106EC2646D448003E9D08 /* PresenterInstantiable.swift */; };
+		BBB106F32646D47D003E9D08 /* ViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB106F22646D47D003E9D08 /* ViewControllerBase.swift */; };
+		BBB107002646D52B003E9D08 /* ProductPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB106FF2646D52B003E9D08 /* ProductPresenter.swift */; };
+		BBB107082646D69C003E9D08 /* ViewBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB107072646D69C003E9D08 /* ViewBase.swift */; };
+		BBB1070D2646D6B1003E9D08 /* PresenterBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB1070C2646D6B1003E9D08 /* PresenterBase.swift */; };
+		BBB1071C2646DDBD003E9D08 /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB1071B2646DDBD003E9D08 /* StoreKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +58,23 @@
 		BB2D1D8026418A8C00E7C980 /* BillingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2D1D8426418A8D00E7C980 /* BillingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingUITests.swift; sourceTree = "<group>"; };
 		BB2D1D8626418A8D00E7C980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BB2D1F902644111000E7C980 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
-		BB2D1F91264411DC00E7C980 /* Subscription.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Subscription.storekit; sourceTree = "<group>"; };
+		BB2D1F902644111000E7C980 /* Consumable.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Consumable.storekit; sourceTree = "<group>"; };
+		BB2D1F91264411DC00E7C980 /* Non-consumable.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Non-consumable.storekit"; sourceTree = "<group>"; };
 		BB2D1F922644122500E7C980 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
-		BB2D1F972644123700E7C980 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		BB2D1F972644123700E7C980 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		BB2D1FA22644134600E7C980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB47AFE0265D3D4300F8592E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		BB47AFE2265D3EC400F8592E /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		BB47AFEB265D461900F8592E /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		BB47AFEE265D49A200F8592E /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		BBB106E22646D40E003E9D08 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		BBB106E72646D434003E9D08 /* ViewControllerInstansiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerInstansiable.swift; sourceTree = "<group>"; };
+		BBB106EC2646D448003E9D08 /* PresenterInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInstantiable.swift; sourceTree = "<group>"; };
+		BBB106F22646D47D003E9D08 /* ViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBase.swift; sourceTree = "<group>"; };
+		BBB106FF2646D52B003E9D08 /* ProductPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPresenter.swift; sourceTree = "<group>"; };
+		BBB107072646D69C003E9D08 /* ViewBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBase.swift; sourceTree = "<group>"; };
+		BBB1070C2646D6B1003E9D08 /* PresenterBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterBase.swift; sourceTree = "<group>"; };
+		BBB1071B2646DDBD003E9D08 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB47AFE6265D40A900F8592E /* Toast in Frameworks */,
+				BB47AFEA265D43A100F8592E /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +127,6 @@
 		BB2D1D6126418A8B00E7C980 /* Billing */ = {
 			isa = PBXGroup;
 			children = (
-				BB2D1D7026418A8C00E7C980 /* Info.plist */,
 				BB2D1F7A2644103000E7C980 /* Resources */,
 				BB2D1F7B2644104300E7C980 /* Sources */,
 				BB2D1F8D264410A800E7C980 /* Storyboards */,
@@ -130,6 +157,8 @@
 		BB2D1F7A2644103000E7C980 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BB2D1D7026418A8C00E7C980 /* Info.plist */,
+				BB47AFEB265D461900F8592E /* R.generated.swift */,
 				BB2D1D6B26418A8C00E7C980 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -138,11 +167,12 @@
 		BB2D1F7B2644104300E7C980 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				BBB107112646DA6A003E9D08 /* Repositories */,
 				BB2D1F8C2644109600E7C980 /* AppDelegate */,
 				BB2D1F8B2644108700E7C980 /* Protocols */,
 				BB2D1F8A2644108100E7C980 /* Models */,
-				BB2D1F892644107B00E7C980 /* Presenters */,
 				BB2D1F882644107500E7C980 /* Views */,
+				BB2D1F892644107B00E7C980 /* Presenters */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -150,7 +180,8 @@
 		BB2D1F882644107500E7C980 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BB2D1F972644123700E7C980 /* ProductViewController.swift */,
+				BBB106F12646D46D003E9D08 /* Base */,
+				BBB106FA2646D4A2003E9D08 /* Product */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +189,7 @@
 		BB2D1F892644107B00E7C980 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				BBB106FE2646D51B003E9D08 /* Product */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -165,6 +197,7 @@
 		BB2D1F8A2644108100E7C980 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BB47AFE2265D3EC400F8592E /* ProductModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,6 +205,10 @@
 		BB2D1F8B2644108700E7C980 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				BBB106E72646D434003E9D08 /* ViewControllerInstansiable.swift */,
+				BBB106EC2646D448003E9D08 /* PresenterInstantiable.swift */,
+				BBB107072646D69C003E9D08 /* ViewBase.swift */,
+				BBB1070C2646D6B1003E9D08 /* PresenterBase.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -203,10 +240,61 @@
 		BB2D1F8F264410DC00E7C980 /* StoreKits */ = {
 			isa = PBXGroup;
 			children = (
-				BB2D1F902644111000E7C980 /* Configuration.storekit */,
-				BB2D1F91264411DC00E7C980 /* Subscription.storekit */,
+				BB2D1F902644111000E7C980 /* Consumable.storekit */,
+				BB2D1F91264411DC00E7C980 /* Non-consumable.storekit */,
 			);
 			path = StoreKits;
+			sourceTree = "<group>";
+		};
+		BB47AFED265D499500F8592E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BB47AFEE265D49A200F8592E /* ProductCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BBB106F12646D46D003E9D08 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				BBB106F22646D47D003E9D08 /* ViewControllerBase.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		BBB106FA2646D4A2003E9D08 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				BBB106E22646D40E003E9D08 /* ProductViewController.swift */,
+				BB2D1F972644123700E7C980 /* ProductsViewController.swift */,
+				BB47AFED265D499500F8592E /* Cell */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		BBB106FE2646D51B003E9D08 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				BBB106FF2646D52B003E9D08 /* ProductPresenter.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		BBB107112646DA6A003E9D08 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BBB107122646DA7B003E9D08 /* Product */,
+				BBB1071B2646DDBD003E9D08 /* StoreKitManager.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BBB107122646DA7B003E9D08 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				BB47AFE0265D3D4300F8592E /* Product.swift */,
+			);
+			path = Product;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB2D1D8926418A8D00E7C980 /* Build configuration list for PBXNativeTarget "Billing" */;
 			buildPhases = (
+				BB47AFE7265D434800F8592E /* ShellScript */,
 				BB2D1D5B26418A8B00E7C980 /* Sources */,
 				BB2D1D5C26418A8B00E7C980 /* Frameworks */,
 				BB2D1D5D26418A8B00E7C980 /* Resources */,
@@ -225,6 +314,10 @@
 			dependencies = (
 			);
 			name = Billing;
+			packageProductDependencies = (
+				BB47AFE5265D40A900F8592E /* Toast */,
+				BB47AFE9265D43A100F8592E /* Rswift */,
+			);
 			productName = Billing;
 			productReference = BB2D1D5F26418A8B00E7C980 /* Billing.app */;
 			productType = "com.apple.product-type.application";
@@ -296,6 +389,10 @@
 				Base,
 			);
 			mainGroup = BB2D1D5626418A8B00E7C980;
+			packageReferences = (
+				BB47AFE4265D40A900F8592E /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+				BB47AFE8265D43A100F8592E /* XCRemoteSwiftPackageReference "R.swift.Library" */,
+			);
 			productRefGroup = BB2D1D6026418A8B00E7C980 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -334,13 +431,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BB47AFE7265D434800F8592E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/Billing/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which rswift >/dev/null; then\nrswift generate \"$SRCROOT/Billing/Resources/R.generated.swift\"\nelse\necho \"warning: rswift not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB2D1D5B26418A8B00E7C980 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBB106E32646D40E003E9D08 /* ProductViewController.swift in Sources */,
 				BB2D1FA32644134600E7C980 /* AppDelegate.swift in Sources */,
-				BB2D1F982644123700E7C980 /* ProductViewController.swift in Sources */,
+				BBB106ED2646D448003E9D08 /* PresenterInstantiable.swift in Sources */,
+				BBB106F32646D47D003E9D08 /* ViewControllerBase.swift in Sources */,
+				BB47AFE1265D3D4300F8592E /* Product.swift in Sources */,
+				BB47AFEF265D49A200F8592E /* ProductCell.swift in Sources */,
+				BBB106E82646D434003E9D08 /* ViewControllerInstansiable.swift in Sources */,
+				BB47AFEC265D461900F8592E /* R.generated.swift in Sources */,
+				BB2D1F982644123700E7C980 /* ProductsViewController.swift in Sources */,
+				BB47AFE3265D3EC400F8592E /* ProductModel.swift in Sources */,
+				BBB1071C2646DDBD003E9D08 /* StoreKitManager.swift in Sources */,
+				BBB107002646D52B003E9D08 /* ProductPresenter.swift in Sources */,
+				BBB1070D2646D6B1003E9D08 /* PresenterBase.swift in Sources */,
+				BBB107082646D69C003E9D08 /* ViewBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,7 +641,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MTQ5H3G29;
-				INFOPLIST_FILE = Billing/Info.plist;
+				INFOPLIST_FILE = Billing/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,7 +661,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7MTQ5H3G29;
-				INFOPLIST_FILE = Billing/Info.plist;
+				INFOPLIST_FILE = Billing/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -667,6 +798,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BB47AFE4265D40A900F8592E /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		BB47AFE8265D43A100F8592E /* XCRemoteSwiftPackageReference "R.swift.Library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BB47AFE5265D40A900F8592E /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB47AFE4265D40A900F8592E /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+		BB47AFE9265D43A100F8592E /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BB47AFE8265D43A100F8592E /* XCRemoteSwiftPackageReference "R.swift.Library" */;
+			productName = Rswift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BB2D1D5726418A8B00E7C980 /* Project object */;
 }
